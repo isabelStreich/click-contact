@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ADCCD0F6">
+    <ActionMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ActionMenuView>
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "Mes Click-Contact"
+        android:id = "@+id/textView"
+        android:gravity="center"
+        android:textSize = "35dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#C1313967"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--    android:background="#ADCCD0F6"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Information de mon client"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:background="#C1313967">
+    </TextView>
+<!--Nom-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom:"
+        android:textSize="20sp">
+    </TextView>
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:hint="Nom et prenom">
+    </EditText>
+    <!--adresse-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adresse:"
+        android:textSize="20sp">
+    </TextView>
+    <EditText
+        android:id="@+id/et_adresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:hint="Numero, rue, Code Psotal, Ville, Pais">
+    </EditText>
+<!--    Telephone-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telephone:"
+        android:textSize="20sp">
+    </TextView>
+    <EditText
+        android:id="@+id/et_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:hint="Telephone">
+    </EditText>
+<!--    courriel-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Courriel:"
+        android:textSize="20sp">
+    </TextView>
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:hint="Courriel electronic">
+    </EditText>
+<!--    entite bancaire-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entite Bancaire:"
+        android:textSize="20sp">
+    </TextView>
+    <EditText
+        android:id="@+id/et_nameBanc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:hint="Entite Bancaire">
+    </EditText>
+<!--    information des operations-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Information des Operations"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:background="#C1313967">
+    </TextView>
+<!--    debut scroll view-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/infoOperation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff">
+            <!--        operation-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Operation Numero:"
+                android:textSize="20sp">
+            </TextView>
+            <EditText
+                android:id="@+id/et_operationId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:hint="Operation N:">
+            </EditText>
+            <!--            destinataire-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destinataire:"
+                android:textSize="20sp">
+            </TextView>
+            <EditText
+                android:id="@+id/et_destinataire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:hint="Destinataire Nom:">
+            </EditText>
+<!--            type operation-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type d'Operation:"
+                android:textSize="20sp">
+            </TextView>
+            <EditText
+                android:id="@+id/et_typeOperation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:hint="Type d'Operation">
+            </EditText>
+<!--            Position Tarifaire-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Position Tarifaire :"
+                android:textSize="20sp">
+            </TextView>
+            <EditText
+                android:id="@+id/et_positionTarifaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:hint="Position Tarifaire">
+            </EditText>
+<!--            incoterms-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Incoterms :"
+                android:textSize="20sp">
+            </TextView>
+            <EditText
+                android:id="@+id/et_incoterms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:hint="Incoterms">
+            </EditText>
+            <!--    entite bancaire-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entite Bancaire:"
+                android:textSize="20sp">
+            </TextView>
+            <EditText
+                android:id="@+id/et_nameBancDestinataire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:hint="Entite Bancaire">
+            </EditText>
+<!--            Status operation douaniere-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status operation douaniere:"
+                android:textSize="20sp">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/radio_enCours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="En cours"
+                    android:textSize="20sp"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radio_contingent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contingent"
+                    android:textSize="20sp"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radio_termine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Termine"
+                    android:textSize="20sp"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
