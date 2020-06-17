@@ -1,36 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="#C17380C5">
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".MainActivity">
+    <!--    android:background="#8A616CA6"-->
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:freezesText="false"
+        android:layout_marginTop="107dp"
         android:gravity="center"
-        android:text="<<Click-Contact>>"
-        android:textSize="35dp"
-        android:textStyle="bold" />
+        android:text="Login"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:gravity="center"
+        android:text ="Click-Contact"
+        android:id = "@+id/textView"
+        android:layout_below = "@+id/textview"
+        android:layout_centerHorizontal = "true"
+        android:textColor = "#363735"
+        android:textSize = "35dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id = "@+id/et_name"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text="test"
+        android:hint = "Enter Name"
+        android:focusable = "true"
+        android:textColorHighlight = "#1C2659"
+        android:textColorHint = "#1C2659"
+        android:layout_marginTop = "46dp"
+        android:layout_below = "@+id/imageView"
+        />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView"
+        android:layout_width="232dp"
+        android:layout_height="104dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo2" />
+
+    <EditText
+        android:id="@+id/et_pwd"
         android:layout_width="match_parent"
-        android:layout_height="492dp"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/logo2" />
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:text="123"
+        android:ems="10"
+        android:layout_below="@+id/et_name"
+        android:textColorHint="#1C2659"
+        android:hint="Password" />
+
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:id="@+id/btnLogin"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-318dp"
+        android:layout_marginRight="-318dp"
+        android:layout_marginBottom="115dp"
+        android:layout_toStartOf="@+id/textview"
+        android:layout_toLeftOf="@+id/textview"
         android:background="#C13B4267"
-        android:text="start"
-        android:textSize="20sp"/>
-</LinearLayout>
+        android:text="login"
+        android:textColor="#ffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-316dp"
+        android:layout_marginRight="-316dp"
+        android:layout_marginBottom="56dp"
+        android:layout_toStartOf="@+id/textview"
+        android:layout_toLeftOf="@+id/textview"
+        android:background="#C13B4267"
+        android:text="Register"
+        android:textColor="#ffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

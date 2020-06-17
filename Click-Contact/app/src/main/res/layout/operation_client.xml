@@ -6,13 +6,14 @@
 <!--    android:orientation="vertical" android:background="#8A616CA6"-->
 
     <LinearLayout
-        android:id="@+id/infoOperation"
+        android:id="@+id/lLInfoOperation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
         <!--        operation-->
         <TextView
+            android:id="@+id/tv_operationId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Operation Numero:"
@@ -28,6 +29,7 @@
         </EditText>
         <!--            destinataire-->
         <TextView
+            android:id="@+id/tv_destinataire"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Destinataire:"
@@ -43,6 +45,7 @@
         </EditText>
         <!--            type operation-->
         <TextView
+            android:id="@+id/tv_typeOperation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Type d'Operation:"
@@ -58,6 +61,7 @@
         </EditText>
         <!--            Position Tarifaire-->
         <TextView
+            android:id="@+id/tv_positionTarifaire"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Position Tarifaire :"
@@ -73,6 +77,7 @@
         </EditText>
         <!--            incoterms-->
         <TextView
+            android:id="@+id/tv_incoterms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Incoterms :"
@@ -88,6 +93,7 @@
         </EditText>
         <!--    entite bancaire-->
         <TextView
+            android:id="@+id/tv_nameBancDestinataire"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Entite Bancaire:"
@@ -103,6 +109,7 @@
         </EditText>
         <!--            Status operation douaniere-->
         <TextView
+            android:id="@+id/rb_status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Status operation douaniere:"
@@ -156,6 +163,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/btnAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ajouter"
@@ -166,6 +174,7 @@
                 android:background="#CDDC39">
             </Button>
             <Button
+                android:id="@+id/btnEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Editer"
@@ -176,6 +185,7 @@
                 android:background="#E04CAF50">
             </Button>
             <Button
+                android:id="@+id/btnDelete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Suprimer"

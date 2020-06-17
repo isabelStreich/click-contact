@@ -5,6 +5,7 @@
     android:orientation="vertical">
 <!--    android:background="#ADCCD0F6"-->
     <TextView
+        android:id="@+id/infoClient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Information de mon client"
@@ -210,6 +211,7 @@
             </TextView>
 
             <RadioGroup
+                android:id="@+id/rb_statusOperation"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">

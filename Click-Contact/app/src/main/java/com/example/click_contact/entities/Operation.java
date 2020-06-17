@@ -5,15 +5,17 @@ public class Operation {
     String typeOperation;
     String tarifPosition;
     String incoterms;
+    String entiteBancaire;
     String Status;
     public Operation() {
     }
-    public Operation(int id, int idClient, String typeOperation, String tarifPosition, String incoterms, String status) {
+    public Operation(int id, int idClient, String typeOperation, String tarifPosition, String incoterms, String entiteBancaire, String status) {
         this.id = id;
         this.idClient = idClient;
         this.typeOperation = typeOperation;
         this.tarifPosition = tarifPosition;
         this.incoterms = incoterms;
+        this.entiteBancaire = entiteBancaire;
         Status = status;
     }
     public int getId() {
@@ -45,6 +47,12 @@ public class Operation {
     }
     public void setIncoterms(String incoterms) {
         this.incoterms = incoterms;
+    }
+    public String getEntiteBancaire() {
+        return entiteBancaire;
+    }
+    public void setEntiteBancaire(String entiteBancaire) {
+        this.entiteBancaire = entiteBancaire;
     }
     public String getStatus() {
         return Status;

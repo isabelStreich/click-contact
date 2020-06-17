@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:text="Register"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id = "@+id/tv_titre"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:gravity="center"
+        android:text = "Click-Contact"
+        android:layout_below = "@+id/textview"
+        android:layout_centerHorizontal = "true"
+        android:textColor = "#363735"
+        android:textSize = "35dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="232dp"
+        android:layout_height="104dp"
+        android:layout_below="@+id/textView"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo2" />
+
+    <EditText
+        android:id = "@+id/et_name"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint = "Enter Name"
+        android:focusable = "true"
+        android:textColorHighlight = "#1C2659"
+        android:textColorHint = "#1C2659"
+        android:layout_marginTop = "46dp"
+        android:layout_below = "@+id/imageView"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/et_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/et_name"
+        android:layout_alignEnd="@+id/et_name"
+        android:textColorHint="#1C2659"
+        android:hint="Password" />
+
+    <EditText
+        android:id = "@+id/et_email"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint = "Enter email"
+        android:textColorHighlight = "#1C2659"
+        android:textColorHint = "#1C2659"
+        android:layout_below="@+id/et_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/et_name"
+        android:layout_alignEnd="@+id/et_name"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#C13B4267"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:onClick="ajouterUser"/>
+
+</LinearLayout>
