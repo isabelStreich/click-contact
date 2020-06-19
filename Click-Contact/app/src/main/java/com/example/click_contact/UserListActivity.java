@@ -49,7 +49,7 @@ public class UserListActivity extends AppCompatActivity {
         context = this;
         setContentView(R.layout.listview_general);
         tv_titre = findViewById(R.id.tv_titre);
-//        btnAjouterContact = findViewById(R.id.btnAjouterContact);
+
         lv_generalList = findViewById(R.id.lv_generalList);
 //        ConnexionBd.copyBdFromAssets(this);
         listviewGeneralAdapter = new ListviewGeneralAdapter(context, R.layout.view_contact, ContactManager.getAll(context));
@@ -67,7 +67,7 @@ public class UserListActivity extends AppCompatActivity {
             public boolean onItemLongClick(final AdapterView<?> parent, View view, final int position, final long id) {
                 final AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("Mon contact a Ajouter");
-                builder.setMessage("que vous voulez faire");
+                builder.setMessage("Qu'est-ce que vous voulez faire?");
                 builder.setPositiveButton("ajouter", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -152,18 +152,33 @@ public class UserListActivity extends AppCompatActivity {
                         final Contact contact = (Contact) parent.getItemAtPosition(position);
                         final AlertDialog.Builder builder = new AlertDialog.Builder(UserListActivity.this);
                         builder.setTitle("Mon Contact a Suprimer");
-//                        LinearLayout layout = (LinearLayout) getLayoutInflater().inflate(R.layout.view_contact_crud, null);
-//                        builder.setView(layout);
-                        final int positionToRemove = position;
+                        LinearLayout layout = (LinearLayout) getLayoutInflater().inflate(R.layout.view_contact_crud, null);
+                        builder.setView(layout);
+//                        final int positionToRemove = position;
                         builder.setNegativeButton("Cancel", null);
-                        builder.setPositiveButton("Je vais suprimir", new DialogInterface.OnClickListener() {
+                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                ContactManager.delete(context, positionToRemove);
+                                ContactManager.delete(context, contact.getId());
                                 listviewGeneralAdapter.notifyDataSetChanged();
                             }
                         });
-                        builder.show();
+
+                        AlertDialog before = builder.show();
+                        tv_rol = before.findViewById(R.id.tv_rol);
+                        et_rol = before.findViewById(R.id.et_rol);
+                        et_name = before.findViewById(R.id.et_name);
+                        et_adresse = before.findViewById(R.id.et_adresse);
+                        et_telephone = before.findViewById(R.id.et_telephone);
+                        et_courriel = before.findViewById(R.id.et_email);
+                        et_entiteBancaire = before.findViewById(R.id.et_nameBanc);
+                        et_rol.setText(contact.getRol());
+                        et_name.setText(contact.getName());
+                        et_adresse.setText(contact.getAdresse());
+                        et_telephone.setText(contact.getTelephone());
+                        et_courriel.setText(contact.getEmail());
+                        et_entiteBancaire.setText(contact.getEntiteFinanciereUtilise());
+                        //builder.show();
                     }
                 });
                 AlertDialog dialog = builder.show();

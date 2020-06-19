@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -24,18 +25,16 @@ public class OperationViewAdapter extends ArrayAdapter<Operation> {
     TextView tv_incoterms;
     TextView tv_nameBancDestinataire;
     TextView rb_status;
+
     Button btnAdd;
     Button btnEdit;
     Button btnDelete;
-
-
     public OperationViewAdapter(@NonNull Context context, int resource, @NonNull List<Operation> objects) {
         super(context, resource, objects);
     }
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-//        return super.getView(position, convertView, parent);
 
         Operation operation = getItem(position);
         if (convertView == null) {
@@ -49,32 +48,13 @@ public class OperationViewAdapter extends ArrayAdapter<Operation> {
         tv_incoterms = convertView.findViewById(R.id.tv_incoterms);
         tv_nameBancDestinataire = convertView.findViewById(R.id.tv_nameBancDestinataire);
         rb_status = convertView.findViewById(R.id.rb_status);
-
-
         tv_operationId.setText("" + operation.getId());
-        tv_destinataire.setText(""+ operation.getIdClient());
+        tv_destinataire.setText("" + operation.getIdClient());
         tv_typeOperation.setText(operation.getTypeOperation());
         tv_positionTarifaire.setText(operation.getTarifPosition());
         tv_incoterms.setText(operation.getIncoterms());
         tv_nameBancDestinataire.setText(operation.getEntiteBancaire());
         rb_status.setText(operation.getStatus());
-
-
-
         return convertView;
     }
 }
-
-//        tv_rol = convertView.findViewById(R.id.tv_rol);
-//        tv_name = convertView.findViewById(R.id.tv_name);
-//        tv_adresse = convertView.findViewById(R.id.tv_adresse);
-//        tv_telephone = convertView.findViewById(R.id.tv_telephone);
-//        tv_courriel = convertView.findViewById(R.id.tv_email);
-//        tv_entiteBancaire = convertView.findViewById(R.id.tv_nameBanc);
-//
-//        tv_rol.setText(contact.getRol());
-//        tv_name.setText(contact.getName());
-//        tv_adresse.setText(contact.getAdresse());
-//        tv_telephone.setText(contact.getTelephone());
-//        tv_courriel.setText(contact.getEmail());
-//        tv_entiteBancaire.setText(contact.getEntiteFinanciereUtilise());

@@ -51,13 +51,13 @@ public class OperationManager {
         int nbRowAffect = bd.delete("operation", whereClause, whereArg);
         return nbRowAffect > 0;
     }
-    public static boolean updateContact(Context context, Operation operationToChange) {
+    public static boolean updateOperation(Context context, Operation operationToChange) {
         ContentValues contentValues = new ContentValues();
         contentValues.put("idClient", operationToChange.getIdClient());
         contentValues.put("typeOperation", operationToChange.getTypeOperation());
         contentValues.put("tarifPosition", operationToChange.getTarifPosition());
         contentValues.put("incoterms", operationToChange.getIncoterms());
-        contentValues.put("entiteBancaire", operationToChange.getIncoterms());
+        contentValues.put("entiteBancaire", operationToChange.getEntiteBancaire());
         contentValues.put("status", operationToChange.getStatus());
         String whereClause = "id = ?";
         String[] whereArg = new String[]{"" + operationToChange.getId()};

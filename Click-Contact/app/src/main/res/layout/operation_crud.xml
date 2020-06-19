@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lLInfoOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_operationId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Operation N:"
+            android:textColor="#091249"
+            android:textSize="20sp"></EditText>
+
+        <EditText
+            android:id="@+id/et_destinataire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Destinataire Nom:"
+            android:textColor="#091249"
+            android:textSize="20sp"></EditText>
+
+        <EditText
+            android:id="@+id/et_typeOperation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type d'Operation"
+            android:textColor="#091249"
+            android:textSize="20sp"></EditText>
+
+        <EditText
+            android:id="@+id/et_positionTarifaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Position Tarifaire"
+            android:textColor="#091249"
+            android:textSize="20sp"></EditText>
+
+        <EditText
+            android:id="@+id/et_incoterms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Incoterms"
+            android:textColor="#091249"
+            android:textSize="20sp"></EditText>
+
+        <EditText
+            android:id="@+id/et_nameBancDestinataire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entite Bancaire"
+            android:textColor="#091249"
+            android:textSize="20sp"></EditText>
+
+        <EditText
+            android:id="@+id/et_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Status"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+</LinearLayout>

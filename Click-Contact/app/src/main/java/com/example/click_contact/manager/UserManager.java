@@ -11,8 +11,6 @@ import com.example.click_contact.services.ConnexionBd;
 import java.util.ArrayList;
 public class UserManager {
     private static String queryGetAll = "select * from user";
-
-
     public static ArrayList<User> getAll(Context context) {
         ArrayList<User> retour = new ArrayList<>();
         Cursor cursor = ConnexionBd.getBd(context).rawQuery(queryGetAll, null);
@@ -21,7 +19,7 @@ public class UserManager {
             String name = cursor.getString(cursor.getColumnIndex("name"));
             String password = cursor.getString(cursor.getColumnIndex("password"));
             String email = cursor.getString(cursor.getColumnIndex("email"));
-            User user = new User(id, name, password,email);
+            User user = new User(id, name, password, email);
             retour.add(user);
         }
         return retour;
@@ -32,7 +30,6 @@ public class UserManager {
         contentValues.put("name", userToAdd.getName());
         contentValues.put("password", userToAdd.getPassword());
         contentValues.put("email", userToAdd.getEmail());
-
         SQLiteDatabase bd = ConnexionBd.getBd(context);
         long id = bd.insert("user", null, contentValues);
         bd.close();
@@ -58,21 +55,17 @@ public class UserManager {
         return nbRowwAffect > 0;
     }
     private static String queryCheckUser = "select * from user where name like ? and password like ?";
-    public static User checkUserExist( Context context,String name, String password) {
-        User retur= null;
+    public static User checkUserExist(Context context, String name, String password) {
+        User retur = null;
         SQLiteDatabase bd = ConnexionBd.getBd(context);
-        Cursor cursor= bd.rawQuery(queryCheckUser,new String[]{name,password} );
-        if(cursor.moveToNext()){
-            retur= new User ();
+        Cursor cursor = bd.rawQuery(queryCheckUser, new String[]{name, password});
+        if (cursor.moveToNext()) {
+            retur = new User();
             retur.setId(cursor.getInt(cursor.getColumnIndex("id")));
             retur.setName(cursor.getString(cursor.getColumnIndex("name")));
             retur.setPassword(cursor.getString(cursor.getColumnIndex("password")));
             retur.setEmail(cursor.getString(cursor.getColumnIndex("email")));
-
         }
         return retur;
     }
-
-
-
 }

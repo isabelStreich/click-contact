@@ -30,7 +30,7 @@ public class MonContactViewAdapter extends ArrayAdapter<Operation> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-//        return super.getView(position, convertView, parent);
+
         Operation operation = getItem(position);
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.client_info, null);
@@ -43,8 +43,8 @@ public class MonContactViewAdapter extends ArrayAdapter<Operation> {
         et_nameBancDestinataire = convertView.findViewById(R.id.et_nameBancDestinataire);
         rb_statusOperation = convertView.findViewById(R.id.rb_statusOperation);
 
-        et_operationId.setText(operation.getId());
-        et_destinataire.setText(operation.getIdClient());
+        et_operationId.setText(""+operation.getId());
+        et_destinataire.setText(""+operation.getIdClient());
         et_typeOperation.setText(operation.getTypeOperation());
         et_positionTarifaire.setText(operation.getTarifPosition());
         et_incoterms.setText(operation.getIncoterms());

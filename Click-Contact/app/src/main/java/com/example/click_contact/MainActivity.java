@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         context= this;
         setContentView(R.layout.activity_main);
-//        /        recuperar mis elementos
+
         btnLogin = findViewById(R.id.btnLogin);
         btnRegister = findViewById(R.id.btnRegister);
         et_name = findViewById(R.id.et_name);

@@ -20,12 +20,18 @@ public class Operation {
     }
     public Operation(int id, String typeOperation, String tarifPosition, String incoterms, String entiteBancaire) {
         this.id = id;
-
         this.typeOperation = typeOperation;
         this.tarifPosition = tarifPosition;
         this.incoterms = incoterms;
         this.entiteBancaire = entiteBancaire;
 
+    }
+    public Operation(String typeOperation, String tarifPosition, String incoterms, String entiteBancaire, String status) {
+        this.typeOperation = typeOperation;
+        this.tarifPosition = tarifPosition;
+        this.incoterms = incoterms;
+        this.entiteBancaire = entiteBancaire;
+        this.Status =status;
     }
     public int getId() {
         return id;

@@ -32,6 +32,7 @@ public class ListviewGeneralAdapter extends ArrayAdapter<Contact> {
     EditText et_telephone;
     EditText et_courriel;
     EditText et_entiteBancaire;
+
     Context ctx;
     public ListviewGeneralAdapter(@NonNull Context context, int resource, @NonNull List<Contact> objects) {
         super(context, resource, objects);
@@ -40,7 +41,7 @@ public class ListviewGeneralAdapter extends ArrayAdapter<Contact> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-//        return super.getView(position, convertView, parent);
+
         Contact contact = getItem(position);
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.view_contact, null);
@@ -54,37 +55,13 @@ public class ListviewGeneralAdapter extends ArrayAdapter<Contact> {
         tv_entiteBancaire = convertView.findViewById(R.id.tv_nameBanc);
 
         tv_rol.setText(contact.getRol());
-//        et_rol.setText(contact.getRol());
         tv_name.setText(contact.getName());
         tv_adresse.setText(contact.getAdresse());
         tv_telephone.setText(contact.getTelephone());
         tv_courriel.setText(contact.getEmail());
         tv_entiteBancaire.setText(contact.getEntiteFinanciereUtilise());
-//        EDITTEXT
-//        et_rol = convertView.findViewById(R.id.et_rol);
-//        et_name = convertView.findViewById(R.id.et_name);
-//        et_adresse = convertView.findViewById(R.id.et_adresse);
-//        et_telephone = convertView.findViewById(R.id.et_telephone);
-//        et_courriel = convertView.findViewById(R.id.et_email);
-//        et_entiteBancaire = convertView.findViewById(R.id.et_nameBanc);
-//
-//        tv_rol.setText(contact.getRol());
-//        et_rol.setText(contact.getRol());
-//        et_name.setText(contact.getName());
-//        et_adresse.setText(contact.getAdresse());
-//        et_telephone.setText(contact.getTelephone());
-//        et_courriel.setText(contact.getEmail());
-////        et_entiteBancaire.setText(contact.getEntiteFinanciereUtilise());
+
         return convertView;
     }
 }
-//    EditText et_name;
-//    EditText et_adresse;
-//    EditText et_telephone;
-//    EditText et_courriel;
-//    EditText et_entiteBancaire;
-//        et_name = convertView.findViewById(R.id.et_name);
-//        et_adresse = convertView.findViewById(R.id.et_adresse);
-//        et_telephone = convertView.findViewById(R.id.et_telephone);
-//        et_courriel = convertView.findViewById(R.id.et_email);
-//        et_entiteBancaire = convertView.findViewById(R.id.tv_nameBanc);
+
