@@ -43,7 +43,7 @@ public class ContactManager {
     }
     public static boolean delete(Context context, int id) {
         SQLiteDatabase bd = ConnexionBd.getBd(context);
-        String whereClause = " id = ?";
+        String whereClause = "id = ?";
         String[] whereArg = new String[]{"" + id};
         int nbRowAffect = bd.delete("contact", whereClause, whereArg);
         return nbRowAffect > 0;

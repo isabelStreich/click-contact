@@ -5,11 +5,6 @@
     android:orientation="vertical"
     android:background="#ADCCD0F6">
 
-<!--    <ActionMenuView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--    </ActionMenuView>-->
     <TextView
         android:id = "@+id/tv_titre"
         android:layout_width = "match_parent"
@@ -20,18 +15,7 @@
         android:textStyle="bold"
         android:textColor="#fff"
         android:background="#C1313967"/>
-    <Button
-        android:id="@+id/btnAjouterContact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#7D817D"
-        android:textColor="#fff"
-        android:textStyle="bold"
-        android:textSize="16dp"
-        android:text="Ajouter"
-        />
-
-    <ListView
+     <ListView
         android:id="@+id/lv_generalList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

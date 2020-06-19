@@ -18,6 +18,21 @@ public class Contact {
         this.rol = rol;
         this.entiteFinanciereUtilise = entiteFinanciereUtilise;
     }
+    public Contact(String nom, String adresse, String telephone, String email, String entiteFinanciereUtilise) {
+        this.name = name;
+        this.adresse = adresse;
+        this.telephone = telephone;
+        this.email = email;
+        this.entiteFinanciereUtilise = entiteFinanciereUtilise;
+    }
+    public Contact(String name, String adresse, String telephone, String email, String rol, String entiteFinanciereUtilise) {
+        this.name = name;
+        this.adresse = adresse;
+        this.telephone = telephone;
+        this.email = email;
+        this.rol = rol;
+        this.entiteFinanciereUtilise = entiteFinanciereUtilise;
+    }
     public int getId() {
         return id;
     }

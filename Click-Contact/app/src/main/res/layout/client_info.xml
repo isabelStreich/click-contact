@@ -22,14 +22,14 @@
         android:text="Nom:"
         android:textSize="20sp">
     </TextView>
-    <EditText
-        android:id="@+id/et_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textSize="20sp"
-        android:hint="Nom et prenom">
-    </EditText>
+<!--    <EditText-->
+<!--        android:id="@+id/et_name"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="20sp"-->
+<!--        android:hint="Nom et prenom">-->
+<!--    </EditText>-->
     <!--adresse-->
     <TextView
         android:layout_width="match_parent"
@@ -37,14 +37,14 @@
         android:text="Adresse:"
         android:textSize="20sp">
     </TextView>
-    <EditText
-        android:id="@+id/et_adresse"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textSize="20sp"
-        android:hint="Numero, rue, Code Psotal, Ville, Pais">
-    </EditText>
+<!--    <EditText-->
+<!--        android:id="@+id/et_adresse"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="20sp"-->
+<!--        android:hint="Numero, rue, Code Psotal, Ville, Pais">-->
+<!--    </EditText>-->
 <!--    Telephone-->
     <TextView
         android:layout_width="match_parent"
@@ -52,14 +52,14 @@
         android:text="Telephone:"
         android:textSize="20sp">
     </TextView>
-    <EditText
-        android:id="@+id/et_telephone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textSize="20sp"
-        android:hint="Telephone">
-    </EditText>
+<!--    <EditText-->
+<!--        android:id="@+id/et_telephone"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="20sp"-->
+<!--        android:hint="Telephone">-->
+<!--    </EditText>-->
 <!--    courriel-->
     <TextView
         android:layout_width="match_parent"
@@ -67,14 +67,14 @@
         android:text="Courriel:"
         android:textSize="20sp">
     </TextView>
-    <EditText
-        android:id="@+id/et_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textSize="20sp"
-        android:hint="Courriel electronic">
-    </EditText>
+<!--    <EditText-->
+<!--        android:id="@+id/et_email"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="20sp"-->
+<!--        android:hint="Courriel electronic">-->
+<!--    </EditText>-->
 <!--    entite bancaire-->
     <TextView
         android:layout_width="match_parent"
@@ -82,14 +82,14 @@
         android:text="Entite Bancaire:"
         android:textSize="20sp">
     </TextView>
-    <EditText
-        android:id="@+id/et_nameBanc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textSize="20sp"
-        android:hint="Entite Bancaire">
-    </EditText>
+<!--    <EditText-->
+<!--        android:id="@+id/et_nameBanc"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="20sp"-->
+<!--        android:hint="Entite Bancaire">-->
+<!--    </EditText>-->
 <!--    information des operations-->
     <TextView
         android:layout_width="match_parent"
@@ -101,7 +101,7 @@
         android:gravity="center_horizontal"
         android:background="#C1313967">
     </TextView>
-<!--    debut scroll view-->
+<!--&lt;!&ndash;    debut scroll view&ndash;&gt;-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

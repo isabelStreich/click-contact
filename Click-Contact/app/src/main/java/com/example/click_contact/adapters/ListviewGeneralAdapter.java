@@ -8,15 +8,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.click_contact.R;
 import com.example.click_contact.entities.Contact;
+import com.example.click_contact.manager.ContactManager;
 
 import java.util.List;
-
 public class ListviewGeneralAdapter extends ArrayAdapter<Contact> {
     int res;
     TextView tv_rol;
@@ -25,9 +26,14 @@ public class ListviewGeneralAdapter extends ArrayAdapter<Contact> {
     TextView tv_telephone;
     TextView tv_courriel;
     TextView tv_entiteBancaire;
-
+    EditText et_rol;
+    EditText et_name;
+    EditText et_adresse;
+    EditText et_telephone;
+    EditText et_courriel;
+    EditText et_entiteBancaire;
+    Context ctx;
     public ListviewGeneralAdapter(@NonNull Context context, int resource, @NonNull List<Contact> objects) {
-
         super(context, resource, objects);
         res = resource;
     }
@@ -39,7 +45,7 @@ public class ListviewGeneralAdapter extends ArrayAdapter<Contact> {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.view_contact, null);
         }
-
+//        TEXTEVIEW
         tv_rol = convertView.findViewById(R.id.tv_rol);
         tv_name = convertView.findViewById(R.id.tv_name);
         tv_adresse = convertView.findViewById(R.id.tv_adresse);
@@ -48,23 +54,35 @@ public class ListviewGeneralAdapter extends ArrayAdapter<Contact> {
         tv_entiteBancaire = convertView.findViewById(R.id.tv_nameBanc);
 
         tv_rol.setText(contact.getRol());
+//        et_rol.setText(contact.getRol());
         tv_name.setText(contact.getName());
         tv_adresse.setText(contact.getAdresse());
         tv_telephone.setText(contact.getTelephone());
         tv_courriel.setText(contact.getEmail());
         tv_entiteBancaire.setText(contact.getEntiteFinanciereUtilise());
-
+//        EDITTEXT
+//        et_rol = convertView.findViewById(R.id.et_rol);
+//        et_name = convertView.findViewById(R.id.et_name);
+//        et_adresse = convertView.findViewById(R.id.et_adresse);
+//        et_telephone = convertView.findViewById(R.id.et_telephone);
+//        et_courriel = convertView.findViewById(R.id.et_email);
+//        et_entiteBancaire = convertView.findViewById(R.id.et_nameBanc);
+//
+//        tv_rol.setText(contact.getRol());
+//        et_rol.setText(contact.getRol());
+//        et_name.setText(contact.getName());
+//        et_adresse.setText(contact.getAdresse());
+//        et_telephone.setText(contact.getTelephone());
+//        et_courriel.setText(contact.getEmail());
+////        et_entiteBancaire.setText(contact.getEntiteFinanciereUtilise());
         return convertView;
-
     }
 }
-
 //    EditText et_name;
 //    EditText et_adresse;
 //    EditText et_telephone;
 //    EditText et_courriel;
 //    EditText et_entiteBancaire;
-
 //        et_name = convertView.findViewById(R.id.et_name);
 //        et_adresse = convertView.findViewById(R.id.et_adresse);
 //        et_telephone = convertView.findViewById(R.id.et_telephone);

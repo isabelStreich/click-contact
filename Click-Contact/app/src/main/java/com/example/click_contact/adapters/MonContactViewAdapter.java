@@ -42,6 +42,7 @@ public class MonContactViewAdapter extends ArrayAdapter<Operation> {
         et_incoterms = convertView.findViewById(R.id.et_incoterms);
         et_nameBancDestinataire = convertView.findViewById(R.id.et_nameBancDestinataire);
         rb_statusOperation = convertView.findViewById(R.id.rb_statusOperation);
+
         et_operationId.setText(operation.getId());
         et_destinataire.setText(operation.getIdClient());
         et_typeOperation.setText(operation.getTypeOperation());

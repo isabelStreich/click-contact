@@ -17,14 +17,15 @@ public class OperationManager {
         Cursor cursor = ConnexionBd.getBd(context).rawQuery(queryGetAll, null);
         while (cursor.moveToNext()) {
             int id = cursor.getInt(cursor.getColumnIndex("id"));
-            int idClient = cursor.getInt(cursor.getColumnIndex("idClient"));
+//            int idClient = cursor.getInt(cursor.getColumnIndex("idClient"));
             String typeOperation = cursor.getString(cursor.getColumnIndex("typeOperation"));
             String tarifPosition = cursor.getString(cursor.getColumnIndex("tarifPosition"));
             String incoterms = cursor.getString(cursor.getColumnIndex("incoterms"));
             String entiteBancaire = cursor.getString(cursor.getColumnIndex("entiteBancaire"));
-            String status = cursor.getString(cursor.getColumnIndex("Status"));
+//            String status = cursor.getString(cursor.getColumnIndex("Status"));
 
-            Operation operation= new Operation(id,idClient,typeOperation,tarifPosition,incoterms,entiteBancaire,status);
+            Operation operation= new Operation(id,typeOperation,tarifPosition,incoterms,entiteBancaire);
+//            Operation operation= new Operation(id,idClient,typeOperation,tarifPosition,incoterms,entiteBancaire,status);
             retour.add(operation);
         }
         return retour;

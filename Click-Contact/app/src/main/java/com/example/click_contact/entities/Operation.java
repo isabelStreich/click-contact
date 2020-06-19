@@ -18,6 +18,15 @@ public class Operation {
         this.entiteBancaire = entiteBancaire;
         Status = status;
     }
+    public Operation(int id, String typeOperation, String tarifPosition, String incoterms, String entiteBancaire) {
+        this.id = id;
+
+        this.typeOperation = typeOperation;
+        this.tarifPosition = tarifPosition;
+        this.incoterms = incoterms;
+        this.entiteBancaire = entiteBancaire;
+
+    }
     public int getId() {
         return id;
     }

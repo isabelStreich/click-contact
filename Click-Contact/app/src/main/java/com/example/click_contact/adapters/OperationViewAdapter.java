@@ -39,7 +39,7 @@ public class OperationViewAdapter extends ArrayAdapter<Operation> {
 
         Operation operation = getItem(position);
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.operation_client, null);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.view_operation, null);
         }
         lLInfoOperation = convertView.findViewById(R.id.lLInfoOperation);
         tv_operationId = convertView.findViewById(R.id.tv_operationId);
@@ -49,13 +49,10 @@ public class OperationViewAdapter extends ArrayAdapter<Operation> {
         tv_incoterms = convertView.findViewById(R.id.tv_incoterms);
         tv_nameBancDestinataire = convertView.findViewById(R.id.tv_nameBancDestinataire);
         rb_status = convertView.findViewById(R.id.rb_status);
-//        btnAdd = convertView.findViewById(R.id.btnAdd);
-//        btnEdit = convertView.findViewById(R.id.btnEdit);
-//        btnDelete = convertView.findViewById(R.id.btnDelete);
 
 
-        tv_operationId.setText(operation.getId());
-        tv_destinataire.setText(operation.getIdClient());
+        tv_operationId.setText("" + operation.getId());
+        tv_destinataire.setText(""+ operation.getIdClient());
         tv_typeOperation.setText(operation.getTypeOperation());
         tv_positionTarifaire.setText(operation.getTarifPosition());
         tv_incoterms.setText(operation.getIncoterms());
@@ -63,6 +60,10 @@ public class OperationViewAdapter extends ArrayAdapter<Operation> {
         rb_status.setText(operation.getStatus());
 
 
+
+        return convertView;
+    }
+}
 
 //        tv_rol = convertView.findViewById(R.id.tv_rol);
 //        tv_name = convertView.findViewById(R.id.tv_name);
@@ -77,7 +78,3 @@ public class OperationViewAdapter extends ArrayAdapter<Operation> {
 //        tv_telephone.setText(contact.getTelephone());
 //        tv_courriel.setText(contact.getEmail());
 //        tv_entiteBancaire.setText(contact.getEntiteFinanciereUtilise());
-
-        return convertView;
-    }
-}

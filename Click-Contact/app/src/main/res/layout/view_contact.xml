@@ -6,16 +6,6 @@
     android:background="#ADCCD0F6"
     android:orientation="vertical">
 
-    <!--    <TextView-->
-    <!--        android:id="@+id/tv_name"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:gravity="start"-->
-    <!--        android:textColor="#2B2929"-->
-    <!--        android:textSize="20dp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        android:text="Nom>"></TextView>-->
-
     <TextView
         android:id="@+id/tv_rol"
         android:layout_width="match_parent"
@@ -26,50 +16,58 @@
         android:textSize="22dp"
         android:textStyle="bold"></TextView>
 
+<!--    <EditText-->
+<!--        android:id="@+id/et_rol"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="#08124C"-->
+<!--        android:textSize="20sp"-->
+<!--        android:hint="ROL"></EditText>-->
+
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nom:"
         android:textSize="20sp"></TextView>
-    <!--    <EditText-->
-    <!--        android:id="@+id/et_name"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:textColor="#fff"-->
-    <!--        android:textSize="20sp"-->
-    <!--        android:hint="Nom et prenom">-->
-    <!--    </EditText>-->
-    <!--adresse-->
+<!--        <EditText-->
+<!--            android:id="@+id/et_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#08124C"-->
+<!--            android:textSize="20sp"-->
+<!--            android:hint="Nom et prenom">-->
+<!--        </EditText>-->
+<!--    adresse-->
     <TextView
         android:id="@+id/tv_adresse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Adresse:"
         android:textSize="20sp"></TextView>
-    <!--    <EditText-->
-    <!--        android:id="@+id/et_adresse"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:textColor="#fff"-->
-    <!--        android:textSize="20sp"-->
-    <!--        android:hint="Numero, rue, Code Psotal, Ville, Pais">-->
-    <!--    </EditText>-->
-    <!--    telephone-->
+<!--        <EditText-->
+<!--            android:id="@+id/et_adresse"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#08124C"-->
+<!--            android:textSize="20sp"-->
+<!--            android:hint="Numero, rue, Code Psotal, Ville, Pais">-->
+<!--        </EditText>-->
+<!--        telephone-->
     <TextView
         android:id="@+id/tv_telephone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Telephone:"
         android:textSize="20sp"></TextView>
-    <!--    <EditText-->
-    <!--        android:id="@+id/et_telephone"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:textColor="#fff"-->
-    <!--        android:textSize="20sp"-->
-    <!--        android:hint="Telephone">-->
-    <!--    </EditText>-->
+<!--        <EditText-->
+<!--            android:id="@+id/et_telephone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#08124C"-->
+<!--            android:textSize="20sp"-->
+<!--            android:hint="Telephone">-->
+<!--        </EditText>-->
     <!--    courriel-->
     <TextView
         android:id="@+id/tv_email"
@@ -77,28 +75,28 @@
         android:layout_height="wrap_content"
         android:text="Courriel:"
         android:textSize="20sp"></TextView>
-    <!--    <EditText-->
-    <!--        android:id="@+id/et_email"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:textColor="#fff"-->
-    <!--        android:textSize="20sp"-->
-    <!--        android:hint="Courriel electronic">-->
-    <!--    </EditText>-->
-    <!--    entite bancaire-->
+<!--        <EditText-->
+<!--            android:id="@+id/et_email"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#08124C"-->
+<!--            android:textSize="20sp"-->
+<!--            android:hint="Courriel electronic">-->
+<!--        </EditText>-->
+<!--        entite bancaire-->
     <TextView
         android:id="@+id/tv_nameBanc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Entite Bancaire:"
         android:textSize="20sp"></TextView>
-    <!--    <EditText-->
-    <!--        android:id="@+id/et_nameBanc"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:textColor="#fff"-->
-    <!--        android:textSize="20sp"-->
-    <!--        android:hint="Entite Bancaire">-->
-    <!--    </EditText>-->
+<!--        <EditText-->
+<!--            android:id="@+id/et_nameBanc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#08124C"-->
+<!--            android:textSize="20sp"-->
+<!--            android:hint="Entite Bancaire">-->
+<!--        </EditText>-->
 
-</LinearLayout>
+ </LinearLayout>
