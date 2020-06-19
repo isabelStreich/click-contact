@@ -1,0 +1,8 @@
+CLICK-CONTACT
+User: test
+Mot de passe: 123
+(vous pouvez creer votre utilisateur aussi tout va marcher de la meme facon)
+
+Dans la application vous pouvez creer/editer/delete un Contact et aussi les informations des operations.
+
+Dans le cas de le delete, pour que on peut voir qui est enleve, il faut sortir de la app (ilya un petit inconveniente a resoudre. Je ne le fait pas a cause de temps)
